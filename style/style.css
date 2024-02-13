@@ -16,10 +16,16 @@ h1, h2 {
 
 h1 {
     font-family: "Fuggles";
-    font-size: 120px;
+    font-size: 8vw;
     margin-bottom: -20px;
     color: #9964FF;
     white-space: nowrap;
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 12vw;;
+    }
 }
 
 h2 {
