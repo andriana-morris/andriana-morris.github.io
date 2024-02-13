@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPCA - CSS Grid Layout</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Philosopher&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+    </style>
+    <link href="lab2_styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="container">
+        <header id="header" class="header">
+            <div class="header_image">
+                <img src="spca_logo.png" alt="spca logo" />
+            </div>
+            <h1>Providing forever homes since 1938.</h1>
+        </header>
+
+        <nav class="menu" id="main-menu">
+            <button class="menu-toggle" id="toggle-menu">
+            </button>
+            <div class="menu-dropdown">
+                <ul class="nav-menu">
+                    <li><a href="#">Adopt</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Donate</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Search</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="image-grid">
+            <img src="spca_fundraiser.png" alt="spca fundraiser" />
+            <img src="adopted.png" alt="adopted" />
+            <img src="rescued.jpg" alt="rescued" />
+            <img src="adoption_event.png" alt="adoption event">
+            <img src="adopt_me.png" alt="adopt me">
+            <img src="smiling_dog.png" alt="smiling dog">
+
+        </div>
+
+        <main id="main">
+            <div class="row">
+                <section class="column">
+                    <h2 class="subtitle">Meet your new best friend.</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur laboriosam numquam omnis
+                        voluptatem, inventore tempora alias necessitatibus ex at vero ut veniam! Quo impedit sit iste
+                        reiciendis obcaecati vel possimus.
+                    </p>
+                </section>
+                <section class="column">
+                    <h2 class="subtitle">Simple steps to provide a forever home.</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur laboriosam numquam omnis
+                        voluptatem, inventore tempora alias necessitatibus ex at vero ut veniam! Quo impedit sit iste
+                        reiciendis obcaecati vel possimus.
+                    </p>
+                </section>
+                <section class="column">
+                    <h2 class="subtitle">Be part of changing animals' lives.</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur laboriosam numquam omnis
+                        voluptatem, inventore tempora alias necessitatibus ex at vero ut veniam! Quo impedit sit iste
+                        reiciendis obcaecati vel possimus.
+                    </p>
+                </section>
+                <section class="column">
+                    <h2 class="subtitle">We prevent & prosecute animal cruelty.</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur laboriosam numquam omnis
+                        voluptatem, inventore tempora alias necessitatibus ex at vero ut veniam! Quo impedit sit iste
+                        reiciendis obcaecati vel possimus.
+                    </p>
+                </section>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p> <a href="#">Make a Financial Donation</a><br>2400 Lone Star Dr.<br>Dallas,
+                TX<br>development@spca.com<br>TAX
+                ID=75-1216660</p>
+            <p> <a href="#">Report Animal Cruelty</a><br>214-461-1850</p>
+            <p> <a href="#">Contact Us</a><br>spca@spca.org<br>214-742-7722</p>
+            <p> <a href="#">Locations</a><br>Click to find a location near you.</p>
+        </footer>
+    </div>
+
+    <script type="text/javascript">
+        (function () {
+            var button = document.getElementById('toggle-menu');
+            button.addEventListener('click', function (event) {
+                event.preventDefault();
+                var menu = document.getElementById('main-menu');
+                menu.classList.toggle('is-open');
+            });
+        })();
+    </script>
+    
+</body>
+
+</html>

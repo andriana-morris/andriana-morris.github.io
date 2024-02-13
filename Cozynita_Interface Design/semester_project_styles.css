@@ -1,0 +1,86 @@
+@font-face {
+    font-family: Casta-Thin;
+    src: url(font/Casta-Thin.otf);
+}
+
+body {
+    background: url(Images/tile2.png);
+}
+
+#aboutUs {
+    background: #abccb5;
+}
+
+.display-1, .display-3 {
+    font-family: Casta-Thin;
+    font-weight: bolder;
+    color: #a6243c;
+}
+
+h1 {
+    font-family: Casta-Thin;
+    font-weight: bold;
+    color: #a6243c;
+}
+
+h3 {
+    color: #a6243c;
+}
+
+#home {
+    position: relative;
+    min-height: 600px;
+}
+
+/*#home::before {
+    content: "";
+    background-image: url(Images/tamale2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 1;
+    width: 100%;
+    max-width: 800px;
+    height:auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    top: 70px;
+}*/
+
+.custom-navbar {
+    background-color: #a6243c;
+}
+
+.custom-button {
+    background-color: #a6243c;
+    color: whitesmoke;
+}
+
+.custom-carousel {
+    background-color: #a6243c;
+}
+
+#gallery {
+    background: #abccb5;
+}
+
+#menuCatering {
+    background: #abccb5;
+}
+
+#testimonials {
+    background: #abccb5; 
+}
+
+.btn-pink-moon {
+    background: #ec008c;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #fc6767, #ec008c);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fc6767, #ec008c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+    border: 3px solid #eee;
+}

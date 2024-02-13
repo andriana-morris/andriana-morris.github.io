@@ -1,0 +1,192 @@
+body {
+    background-color: black;
+    margin: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+h1 {
+    font-family: "Fuggles";
+    font-size: 120px;
+    margin-bottom: -20px;
+    color: #9964FF;
+    white-space: nowrap;
+}
+
+h2 {
+    font-size: x-large;
+    color: #D8D5D4;
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-family: "Helvetica";
+    margin-bottom: 20px;
+    background-color: #433f49;
+    font-size: medium;
+    color: #D8D5D4;
+}
+
+.nav-item:not(.active) .nav-link {
+    color:#D8D5D4
+}
+
+.nav-item .nav-link.active {
+    color:#9964FF !important;
+}
+
+.card {
+    padding: 20px;
+    background-color: #433f49;
+    margin: 10px;
+}
+
+.card-title {
+    color: #D8D5D4;
+}
+
+.card-img-top {
+    height: 300px;
+    object-fit: contain;
+    object-position: center;
+}
+
+.card-group {
+    margin-top: 40px;
+}
+
+.contact-card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+
+.contact-card-container .card {
+    text-align: center;
+}
+
+.contact-card-container .card.social-profiles .card-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-card-container svg {
+    width: 24px;
+    height: 24px;
+    margin: 0 5px;
+}
+
+.contact-card-container .card-text {
+    white-space: nowrap;
+}
+
+.contact-card-container .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    color: #D8D5D4;
+    text-decoration: underline;
+}
+
+.resume-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.resume-title {
+    font-size: 26px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color:#D8D5D4;
+}
+
+.resume-item {
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-left: 2px solid #d8d5d438;
+    position: relative;
+    color: #D8D5D4;
+}
+
+.resume-item h4 {
+    line-height: 18px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    color: #D8D5D4;
+    margin-bottom: 10px;
+}
+
+.resume-item h5 {
+    font-size: 16px;
+    padding: 5px 15px;
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 10px;
+    background-color: #d8d5d423;
+}
+
+.resume-item ul {
+    padding-left: 20px;
+}
+
+.resume-item ul li {
+    padding-bottom: 10px;
+}
+
+.resume-item:last-child {
+    padding-bottom: 0;
+}
+
+.resume-item::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    left: -9px;
+    top: 0;
+    background: #9964FF;
+    border: 2px solid #9964FF;
+}
+
+p {
+    color: #D8D5D4;
+}
+
+
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+

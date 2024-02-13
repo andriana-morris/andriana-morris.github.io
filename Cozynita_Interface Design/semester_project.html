@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="description"
+        content="Delicious, authentic, homemade Mexican food served warm from cozy food trailer. Customizable menu, available in McKinney and Anna, TX area.">
+    <meta name="author" content="Andriana Morris">
+    <title>Cozynita</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="semester_project_styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+    <!--Nav Bar-->
+    <nav class="navbar custom-navbar fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="Images/logo.png" alt="Cozyita Logo" style="width: 75px" class="img-thumbnail"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Cozynita</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#aboutUs">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#menuCatering">Sample Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#menuCatering">Catering Request</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#gallery">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#testimonials">Testimonials</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#social">Social Media</a>
+                        </li>
+                        <a class="nav-link" href="#privacyPolicyModal" data-bs-toggle="modal"
+                            data-bs-target="#privacyPolicyModal">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!--Header-->
+    <div id="home" class="container d-flex align-items-center justify-content-center mt-5 p-5 mb-5">
+        <img src="Images/logo.png" class="img-fluid p-2 shadow bg-body-tertiary rounded" style="min-height: 350px;" alt="logo">
+    </div>
+
+
+   <!-- <div id="home" class="container d-flex align-items-center justify-content-center mt-5 p-5 mb-5">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div>
+                    <h1 class="display-1"><b>Cozynita</b></h1>
+                    <h1 class="display-3"><b>Tamales, Tacos & More</b></h1>
+                </div>
+            </div>
+        </div>
+    </div>-->
+
+    <!--About Us Section-->
+    <div class="container" id="aboutUs">
+        <h1 class="text-center pt-3 border-top">About Us</h1>
+        <div class="row align-items-center">
+            <div class="col-md-6 mb-3">
+                <img src="Images/food_trailer.png"
+                    class="img-fluid float-start p-2 shadow p-3 mb-5 bg-body-tertiary rounded" alt="trailer">
+            </div>
+            <div class="col-md-6">
+                <p>
+                <h3>Gourmet on the Go</h3> Our food trailer is more than just a place to grab lunch. It is a place to
+                try out
+                new dishes created by a great chef using fresh, local ingredients.
+                </p>
+                <p>
+                <h3>In a Spot Near You</h3>We bring authentic Mexican food to locations all over the McKinney and Anna
+                area.
+                Be sure to follow our <a href="#social">social media</a> to keep updated on our schedule!
+                </p>
+                <p>
+                <h3>Available for Events</h3>Do you have a company picnic or other special event you would like us to
+                cater?
+                Our weekends book up fast, so <a href="#menuCatering">contact us</a> ASAP!
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!--Menu Modal & Catering Modal-->
+    <div id="menuCatering">
+        <h1 class="text-center pt-3 col-md-8 mx-auto border-top mt-3">Sample Menu & Catering Request</h1>
+        <div id="sample menu" class="container p-5">
+            <div class="row">
+                <div class="col-md-6 mb-3 mb-sm-0">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Menu</h5>
+                            <p class="card-text">Delicious and authentic Mexican food served warm from our cozy food
+                                trailer!</p>
+                            <button type="button" class="btn custom-button" data-bs-toggle="modal"
+                                data-bs-target="#menuModal">Sample Menu</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Catering Request</h5>
+                            <p class="card-text">Request catering today!</p>
+                            <button type="button" class="btn custom-button" data-bs-toggle="modal"
+                                data-bs-target="#cateringModal">Catering Request</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Menu Modal-->
+    <div class="modal fade" id="menuModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Menu is fully customizable!</h1>
+                    <button type="button" class="btn-close custom-button" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="Images/menu.jpg" class="img-fluid" alt="Menu">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn custom-button" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Booking Modal-->
+    <div class="modal fade" id="cateringModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Catering Request</h1>
+                    <button type="button" class="btn-close custom-button" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="row mb-3">
+                            <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control" id="inputEmail">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label for="inputName" class="col-sm-2 col-form-label">Name</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputName">
+                            </div>
+                        </div>
+                        <fieldset class="row mb-3">
+                            <legend class="col-form-label col-sm-2 pt-0">Request</legend>
+                            <div class="col-sm-10">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1"
+                                        value="option1" checked>
+                                    <label class="form-check-label" for="gridRadios1">
+                                        Event Catering
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2"
+                                        value="option2">
+                                    <label class="form-check-label" for="gridRadios2">
+                                        Food Trailer
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3"
+                                        value="option3">
+                                    <label class="form-check-label" for="gridRadios3">
+                                        Other
+                                    </label>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <div class="row mb-3">
+                            <label for="inputMessage" class="col-sm-2 col-form-label">Message</label>
+                            <textarea class="form-control" id="textArea1" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn custom-button">Submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn custom-button" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Photo Gallery-->
+    <h1 class="text-center pt-3 border-top">Some of our delicious food!</h1>
+    <div id="gallery" class="carousel custom-carousel slide mx-auto d-block p-5 mb-5" style="width: 500px;"
+        data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#gallery" data-bs-slide-to="0" class="active" aria-current="true"
+                aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#gallery" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#gallery" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#gallery" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#gallery" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#gallery" data-bs-slide-to="5" aria-label="Slide 6"></button>
+            <button type="button" data-bs-target="#gallery" data-bs-slide-to="6" aria-label="Slide 7"></button>
+            <button type="button" data-bs-target="#gallery" data-bs-slide-to="7" aria-label="Slide 8"></button>
+        </div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="Images/carousel/food_1.png" class="d-block w-100" alt="food 1">
+            </div>
+            <div class="carousel-item">
+                <img src="Images/carousel/food_2.png" class="d-block w-100" alt="food 2">
+            </div>
+            <div class="carousel-item">
+                <img src="Images/carousel/food_3.png" class="d-block w-100" alt="food 3">
+            </div>
+            <div class="carousel-item">
+                <img src="Images/carousel/food_4.png" class="d-block w-100" alt="food 4">
+            </div>
+            <div class="carousel-item">
+                <img src="Images/carousel/food_5.png" class="d-block w-100" alt="food 5">
+            </div>
+            <div class="carousel-item">
+                <img src="Images/carousel/food_6.png" class="d-block w-100" alt="food 6">
+            </div>
+            <div class="carousel-item">
+                <img src="Images/carousel/food_7.png" class="d-block w-100" alt="food 7">
+            </div>
+            <div class="carousel-item">
+                <img src="Images/carousel/food_8.png" class="d-block w-100" alt="food 8">
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#gallery" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#gallery" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!--Testimonials-->
+    <div id="testimonials" class="p-5 pt-3 border-top">
+        <div class="row">
+            <h1 class="text-center p-3 col-md-4 mx-auto">Testimonials</h1>
+            <div class="row align-items-stretch">
+                <div class="col-md-4">
+                    <figure class="text-center custom-text p-3">
+                        <blockquote class="blockquote">
+                            <p>I used Cozynita to cater lunch for our office today. She was very communicative and easy
+                                to work with and the tamales and enchiladas were amazing! Highly recommend!</p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer">
+                            Merdith Clark <cite title="Source Title">Facebook</cite>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-4">
+                    <figure class="text-center custom-text p-3">
+                        <blockquote class="blockquote">
+                            <p>I had Cozynita prepare lunch for 20 of my employees today. Pork tamales, pork and chicken
+                                tacos, beans, phenomenal homemade hot sauce, all the trimmings and great homemade sugar
+                                cookies were provided. Everything was finished in a matter of minutes. The salsa was
+                                killer.
+                                Needless to say we were pleased and can't wait for the next time.</p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer">
+                            Craig S. Feronti <cite title="Source Title">Facebook</cite>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-4">
+                    <figure class="text-center p-3">
+                        <blockquote class="blockquote">
+                            <p>We had tacos from their food truck at Shady Creek RV resort. Excellent food and friendly
+                                people. It was a great experience. I look forward to going again next weekend.</p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer">
+                            Christina Houghtaling <cite title="Source Title">Facebook</cite>
+                        </figcaption>
+                    </figure>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--Socal Media Connect-->
+    <div id="social" class="pt-3 border-top align-content-center p-5">
+        <h1 class="text-center">Connect with us!</h1>
+        <div class="d-flex gap-2 justify-content-center align-items-center">
+            <a class="btn btn-primary" style="background-color: #3b5998; font-size: 72px;"
+                href="https://www.facebook.com/profile.php?id=100077064745293" role="button"><i
+                    class="fa fa-facebook-square"></i></a>
+            <a class="btn btn-pink-moon" style="font-size: 72px;" href="https://www.instagram.com" role="button"><i
+                    class="fa fa-instagram"></i></a>
+            <a class="btn btn-primary" style="background-color: #0077b5; font-size: 72px;"
+                href="https://www.linkedin.com/in/silvia-delgado-6b486117b/" role="button"><i
+                    class="fa fa-linkedin-square"></i></a>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <div class="container flex custom-text" id="footer">
+        <footer class="row row-cols-3 py-5 my-5 border-top">
+            <div class="col mb-3">
+                <a href="#home" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+                    <svg class="bi me-2" width="40" height="32"><img src="images/logo.png" alt="logo"
+                            class="img-fluid"></svg>
+                </a>
+                <p class="text-body-secondary"><b>© 2023 Andriana Morris (webmaster)<br>December 5, 2023 - IMED 1341
+                        Semester Project</b></p>
+            </div>
+
+            <div class="col mb-3">
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#home" class="nav-link p-0 text-body-secondary"><b>Home</b></a>
+                    </li>
+                    <li class="nav-item mb-2"><a href="#aboutUs" class="nav-link p-0 text-body-secondary"><b>About
+                                Us</b></a>
+                    </li>
+                    <li class="nav-item mb-2"><a href="#menuCatering" class="nav-link p-0 text-body-secondary"><b>Sample
+                                Menu</b></a>
+                    </li>
+                    <li class="nav-item mb-2"><a href="#menuCatering"
+                            class="nav-link p-0 text-body-secondary"><b>Catering
+                                Request</b></a></li>
+                </ul>
+            </div>
+
+            <div class="col mb-3">
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#gallery"
+                            class="nav-link p-0 text-body-secondary"><b>Gallery</b></a>
+                    </li>
+                    <li class="nav-item mb-2"><a href="#testimonials"
+                            class="nav-link p-0 text-body-secondary"><b>Testimonials</b></a>
+                    </li>
+                    <li class="nav-item mb-2"><a href="#social" class="nav-link p-0 text-body-secondary"><b>Social
+                                Media</b></a>
+                    </li>
+                    <li class="nav-item mb-2"><a href="#privacyPolicyModal" class="nav-link p-0 text-body-secondary"
+                            data-bs-toggle="modal" data-bs-target="#privacyPolicyModal"><b>Privacy Policy</b></a></li>
+                </ul>
+            </div>
+    </div>
+
+    <!--Privacy Policy Modal-->
+    <div class="modal fade" id="privacyPolicyModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Privacy Policy</h1>
+                    <button type="button" class="btn-close custom-button" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>We are committed to maintaining the accuracy, confidentiality, and security of your personally
+                        identifiable information ("Personal Information"). As part of this commitment, our privacy
+                        policy governs our actions as they relate to the collection, use and disclosure of Personal
+                        Information. Our privacy policy is based upon the values set by the Canadian Standards
+                        Association's Model Code for the Protection of Personal Information and Canada's Personal
+                        Information Protection and Electronic Documents Act.<br>
+                        1. Introduction<br>
+                        We are responsible for maintaining and protecting the Personal Information under our control. We
+                        have designated an individual or individuals who is/are responsible for compliance with our
+                        privacy policy.<br>
+
+
+                        2. Identifying Purposes<br>
+                        We collect, use and disclose Personal Information to provide you with the product or service you
+                        have requested and to offer you additional products and services we believe you might be
+                        interested in. The purposes for which we collect Personal Information will be identified before
+                        or at the time we collect the information. In certain circumstances, the purposes for which
+                        information is collected may be clear, and consent may be implied, such as where your name,
+                        address and payment information is provided as part of the order process.<br>
+
+                        3. Consent<br>
+                        Knowledge and consent are required for the collection, use or disclosure of Personal Information
+                        except where required or permitted by law. Providing us with your Personal Information is always
+                        your choice. However, your decision not to provide certain information may limit our ability to
+                        provide you with our products or services. We will not require you to consent to the collection,
+                        use, or disclosure of information as a condition to the supply of a product or service, except
+                        as required to be able to supply the product or service.<br>
+
+                        4. Limiting Collection<br>
+                        The Personal Information collected will be limited to those details necessary for the purposes
+                        identified by us. With your consent, we may collect Personal Information from you in person,
+                        over the telephone or by corresponding with you via mail, facsimile, or the Internet.<br>
+
+                        5. Limiting Use, Disclosure and Retention<br>
+                        Personal Information may only be used or disclosed for the purpose for which it was collected
+                        unless you have otherwise consented, or when it is required or permitted by law. Personal
+                        Information will only be retained for the period of time required to fulfill the purpose for
+                        which we collected it or as may be required by law. [If applicable, include a description of any
+                        parties with whom you may share Personal Information.]<br>
+
+                        6. Accuracy<br>
+                        Personal Information will be maintained in as accurate, complete and up-to-date form as is
+                        necessary to fulfill the purposes for which it is to be used.<br>
+
+                        7. Safeguarding Customer Information<br>
+                        Personal Information will be protected by security safeguards that are appropriate to the
+                        sensitivity level of the information. We take all reasonable precautions to protect your
+                        Personal Information from any loss or unauthorized use, access or disclosure.<br>
+
+                        8. Openness<br>
+                        We will make information available to you about our policies and practices with respect to the
+                        management of your Personal Information.<br>
+
+                        9. Customer Access<br>
+                        Upon request, you will be informed of the existence, use and disclosure of your Personal
+                        Information, and will be given access to it. You may verify the accuracy and completeness of
+                        your Personal Information, and may request that it be amended, if appropriate. However, in
+                        certain circumstances permitted by law, we will not disclose certain information to you. For
+                        example, we may not disclose information relating to you if other individuals are referenced or
+                        if there are legal, security or commercial proprietary restrictions.<br>
+
+                        10. Handling Customer Complaints and Suggestions<br>
+                        You may direct any questions or enquiries with respect to our privacy policy or our practices by
+                        contacting:<br>
+                        Cozynita<br>
+                        Silvia Morris<br>
+                        cozynit@gmail.com<br>
+                        Additional Information<br><br>
+
+                        Cookies<br>
+                        A cookie is a small computer file or piece of information that may be stored in your computer's
+                        hard drive when you visit our websites. We may use cookies to improve our website’s
+                        functionality and in some cases, to provide visitors with a customized online experience.
+                        Cookies are widely used and most web browsers are configured initially to accept cookies
+                        automatically. You may change your Internet browser settings to prevent your computer from
+                        accepting cookies or to notify you when you receive a cookie so that you may decline its
+                        acceptance. Please note, however, if you disable cookies, you may not experience optimal
+                        performance of our website.<br>
+
+                        Other Websites<br>
+                        Our website may contain links to other third party sites that are not governed by this privacy
+                        policy. Although we endeavour to only link to sites with high privacy standards, our privacy
+                        policy will no longer apply once you leave our website. Additionally, we are not responsible for
+                        the privacy practices employed by third party websites. Therefore, we suggest that you examine
+                        the privacy statements of those sites to learn how your information may be collected, used,
+                        shared and disclosed.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn custom-button" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
